@@ -1,8 +1,8 @@
 #
 #		OVERVIEW:
 #
-#		A shell script that generates a static inventory file which can be
-#		used by ansible containing a list of nodes in a proxmox cluster.
+#		A shell script that generates a static ansible inventory file
+#		containing a list of available nodes in a proxmox cluster.
 #
 #		PREREQUISITES:
 #
@@ -10,7 +10,7 @@
 #		more ideal that you have a low-power node like a thin client as part
 #		of your PVE cluster that is trivial to keep powered on with a UPS.
 #
-#		JQ should be installed/present on the proxmox node.
+#		jq should be installed/present on the proxmox node.
 #
 #		STRATEGY:
 #
