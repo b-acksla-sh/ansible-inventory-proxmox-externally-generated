@@ -10,7 +10,7 @@
 #		more ideal that you have a low-power node like a thin client as part
 #		of your PVE cluster that is trivial to keep powered on with a UPS.
 #
-#		$PVE is a environment variable pointing to the ip address or hostname
+#		$PVE is an environment variable pointing to the ip address or hostname
 #		of that low-power node. It should be defined in your .zshrc or .bashrc
 #		file like so:
 #
