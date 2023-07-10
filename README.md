@@ -13,7 +13,7 @@ $PVE is an environment variable pointing to the ip address or hostname of that l
 
     export PVE=192.168.254.1
 
-jq should be installed/present on the proxmox node.
+jq should be installed/present on that proxmox node.
 
 ---
 

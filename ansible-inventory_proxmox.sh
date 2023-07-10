@@ -16,7 +16,7 @@
 #
 #		export PVE=192.168.254.1
 #
-#		jq should be installed/present on the proxmox node.
+#		jq should be installed/present on that proxmox node.
 #
 #		STRATEGY:
 #
