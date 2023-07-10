@@ -10,6 +10,12 @@
 #		more ideal that you have a low-power node like a thin client as part
 #		of your PVE cluster that is trivial to keep powered on with a UPS.
 #
+#		$PVE is a environment variable pointing to the ip address or hostname
+#		of that low-power node. It should be defined in your .zshrc or .bashrc
+#		file like so:
+#
+#		export PVE=192.168.254.1
+#
 #		jq should be installed/present on the proxmox node.
 #
 #		STRATEGY:
@@ -26,7 +32,8 @@ echo "[proxmox_nodes]\n$nodes" > $(dirname "$0")/ansible-inventory_proxmox.ini
 #
 #		EXTENDING:
 #
-#		Setup aliases in your shell to run the script inline with ansible:
+#		Setup aliases in your shell to run the script inline with ansible,
+#		also in your .zshrc or .bashrc file:
 #
 #		alias ans="ansible-inventory_proxmox.sh && ansible -i ansible-inventory_proxmox.ini"
 #		alias ani="ansible-inventory_proxmox.sh && ansible-inventory -i ansible-inventory_proxmox.ini"
